@@ -27,7 +27,7 @@
 }
 
 
-.menu_a {
+.wrapper__a {
   font-family: DMSans;
   font-size: 15px;
   color: #696871;
@@ -35,12 +35,13 @@
   position: relative;
   transition: top 0.5s;
   top: 0px;
+  border: 0px solid black;
+  margin-bottom: 10px;
 }
 
-.menu_a:hover
+.menu__wrapper:hover > .wrapper__a
 {
     color: #19191B;
-    border-bottom: 2px;
 }
 
 .learn-a
@@ -81,13 +82,17 @@
 }
 
 
+
+
+
+
 @media screen and (min-width: 850px){
-  .menu_a:not(:last-child) {
+  .menu__wrapper:not(:last-child) {
     margin-right: 50px;
   }
 }
 @media screen and (max-width: 850px){
-    .menu_a:not(:last-child) {
+    .menu__wrapper:not(:last-child) {
       margin-right: 5px;
     }
 }

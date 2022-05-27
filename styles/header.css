@@ -8,10 +8,31 @@ header {
 
 .header__menu
 {
+    display: flex;
+    justify-content: center;
     position: relative;
     transition: top 1s;
     top: 0px;
 }
+
+.menu__wrapper
+{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper__line
+{
+    
+    max-height: 2px;
+    min-height: 2px;
+    background-color: inherit;
+}
+
+.menu__wrapper:hover > .wrapper__line
+{
+    background-color: #5454D4;
+}
+
 
 @media screen and (max-width: 1050px){
     .header__menu {
