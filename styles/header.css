@@ -12,6 +12,7 @@ header {
   position: relative;
   transition: top 1s;
   top: 0px;
+  gap: 50px;
 }
 
 .menu__wrapper {
