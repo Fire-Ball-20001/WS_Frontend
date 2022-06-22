@@ -1,0 +1,40 @@
+@font-face {
+  font-family: DMSans;
+  src: url(../fonts/DMSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: DMSans_Bold;
+  src: url(../fonts/DMSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: Mulish;
+  src: url(../fonts/Mulish-Regular.ttf);
+}
+
+.body {
+  padding-left: 13%;
+  padding-right: 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "DMSans";
+  font-size: 50px;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Mulish";
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
