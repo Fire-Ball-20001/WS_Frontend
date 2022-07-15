@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch styles/scss/index.scss:styles/public/style.css"
+    "sass": "sass --watch styles/scss/main.scss:styles/styles.css",
+    "stylelint": "npx stylelint styles/scss/*.scss",
+    "start": "npm run stylelint && npm run sass"
   },
   "repository": {
     "type": "git",

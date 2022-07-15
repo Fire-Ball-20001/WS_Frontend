@@ -1,0 +1,19 @@
+%reset-style {
+  color: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: inherit;
+}
+
+@mixin adaptive-flex($start-pixels) {
+  @media screen and (max-width: $start-pixels) {
+    flex-direction: column;
+  }
+}
+
+@mixin adaptive-order($start-pixels,$order) {
+  @media screen and (max-width: $start-pixels) {
+    order: $order;
+  }
+}

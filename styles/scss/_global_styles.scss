@@ -1,0 +1,22 @@
+h1 {
+  font-family: $font-title;
+  font-size: $h1-text-size;
+}
+
+p {
+  font-size: $p-text-size;
+  font-family: $font-common;
+}
+
+body {
+  @extend %reset-style;
+
+  background: $background;
+}
+
+button {
+  @extend %reset-style;
+
+  cursor: pointer;
+  background: inherit;
+}

@@ -1,0 +1,61 @@
+@import 'variables';
+@import 'fonts';
+@import 'global_styles';
+@import 'buttons';
+@import 'prices';
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: $background;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding-left: $main-padding;
+  padding-right: $main-padding;
+}
+
+.main-landing {
+  @include adaptive-flex($use-adaptive-px);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.landing-img {
+  @include adaptive-order($use-adaptive-px, 0);
+
+  width: $img-width;
+}
+
+.wrapper {
+  @include adaptive-order($use-adaptive-px, 1);
+}
+
+.title {
+  @extend %reset-style;
+
+  font-size: 80px;
+  max-width: 462px;
+  margin-bottom: 30px;
+  color: $title-color;
+}
+
+.common-text {
+  @extend %reset-style;
+
+  max-width: 460px;
+  margin-bottom: 50px;
+  color: $common-color;
+}
+
+.buttons {
+  display: flex;
+  justify-content: start;
+  gap: 10px 40px;
+}
