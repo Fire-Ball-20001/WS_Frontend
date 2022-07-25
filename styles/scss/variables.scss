@@ -1,0 +1,18 @@
+/* stylelint-disable value-keyword-case */
+
+$background: #fff;
+$font-title: DMSans, sans-serif;
+$h1-text-size: 50px;
+$p-text-size: 20px;
+$font-common: Mulish, sans-serif;
+$common-color: #696871;
+$title-color: #19191b;
+$main-padding: 10%;
+$img-width: calc(580px / calc(1440px - 1440px * ($main-padding * 2 / 100%))) * 100%;
+$use-adaptive-px: 1000px;
+$price-hover-color: #ff7143;
+$price-color: #f8f8f8;
+$price-hover-button-color: #9f3919;
+$price-button-color: $background;
+$button-start-hover-color: #ff7143;
+$button-start-color: #5454d4;

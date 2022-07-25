@@ -1,0 +1,126 @@
+@import 'base_styles';
+
+.section {
+  @extend %reset-style;
+
+  width: min-content;
+  min-width: 330px;
+  min-height: 441px;
+  padding: 5px;
+  color: #1d293f;
+  transition: all 0.5s;
+}
+
+.landing-price {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.prices {
+  @include adaptive-flex($use-adaptive-px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px 2%;
+}
+
+.price-title {
+  @include adaptive-flex($use-adaptive-px);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.title-two {
+  display: flex;
+  justify-content: center;
+}
+
+.title-two-second {
+  font-size: 28px;
+  line-height: 43px;
+  margin: 0;
+  align-self: self-end;
+}
+
+.section-wrapper {
+  @extend %reset-style;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  min-width: 330px;
+  min-height: 441px;
+  transition: all 0.5s;
+  background: $price-color;
+  border-radius: 10px;
+}
+
+.section-text {
+  @extend %reset-style;
+
+  font-family: $font-title;
+  font-size: 18px;
+  color: #696871;
+  line-height: 50px;
+  text-align: center;
+}
+
+.title-two-first,
+.section-title {
+  @extend %reset-style;
+
+  font-family: $font-title;
+  font-size: 60px;
+  line-height: 56px;
+  text-align: center;
+}
+
+.section-button {
+  background: $price-button-color;
+  color: #5454d4;
+}
+
+.title-text {
+  line-height: 70px;
+  color: $title-color;
+}
+
+.price-buttons {
+  @extend %reset-style;
+
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #f7f7fb;
+  width: max-content;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+}
+
+.section-wrapper:hover > .section-title,
+.section-wrapper:hover > .title-two,
+.section-wrapper:hover > .section-text,
+.section-wrapper:hover > .section-button {
+  color: $background;
+}
+
+.section:hover {
+  padding: 0;
+}
+
+.section:hover > .section-wrapper {
+  background-color: $price-hover-color;
+  padding: 5px;
+}
+
+.section-wrapper:hover > .section-button {
+  background-color: $price-hover-button-color;
+}
